@@ -1,2 +1,1 @@
-# B-Lab
-cubes-school-homeworks
+# projekat-css
