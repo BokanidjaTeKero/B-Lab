@@ -156,5 +156,60 @@ function gettingDataArr(students) {
 }
 
 gettingDataArr(students);
+// /*************************************************************************************
+// 									TASK 5
+// **************************************************************************************/
+console.log('Task 5: ');
 
 
+var person = {
+	name: "Jack",
+	age: 32,
+	married: true
+}
+
+var newObj = Object.create(person);
+
+function conAge(newObj, person) {
+
+	newObj.name === person.name;
+	newObj.age === person.age;
+	newObj.married === person.married;
+
+	console.log(newObj.age)
+}
+
+conAge(newObj, person)
+
+// /*************************************************************************************
+// 									TASK 6
+// **************************************************************************************/
+console.log('Task 6: ');
+
+var person = {
+	name: "Mike",
+	age: 28,
+	married: true,
+	stampa : function(name, age) {
+
+		console.log(this.name, this.age)
+	}
+}
+
+person.stampa(person.name, person.age);
+
+// /*************************************************************************************
+// 									TASK 7
+// **************************************************************************************/
+console.log('Task 7: ');
+
+var person = {
+	added : function(name, age, married) {
+
+		this.name = name;
+		this.age = age;
+		this.married = married;
+	}
+};
+
+person.added('Bojan', 28, true)
