@@ -1,4 +1,3 @@
-
 /*************************************************************************************
 							JS OBJECTS HOMEWORK 
 **************************************************************************************/
@@ -134,21 +133,14 @@ exam(students);
 console.log('Task 4: ');
 
 
-function finder(text, students) {
+function finder(prop, students) {
 	var data = [];	
 	
 
 	for(i = 0; i < students.length; i++) {
-		if(text === 'name') {
-			data[i] = students[i].name;
-		} else if (text === 'age') {
-			data[i] = students[i].age;
-		} else if (text === 'passed') {
-			data[i] = students[i].passed;
-		} else {
-			console.log('Enter right key!')
+		
+			data[i] = students[i][prop];
 		}	
-	}
 	
 	return data;
 }
