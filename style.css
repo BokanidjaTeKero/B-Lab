@@ -1,0 +1,231 @@
+
+body, html {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    background-color: #a50044;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+}
+
+/****************************************************************************************/
+
+.team-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 150px;
+    background-color: #edbb00;
+}
+
+.team-header h1 {
+    font-size: 60px;
+}
+
+/****************************************************************************************/
+
+.player-card {
+    background-color: #004d98;
+    border: 2px solid white;
+    color: white;
+    font-size: 0.8rem;
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    width: 21%;
+    margin-right: 4%;
+    margin-top: 20px;
+}
+
+.player-card:nth-child(4n) {
+    margin-right: 0;
+}
+
+.player-card img {
+    border-radius: 50%;
+    margin-bottom: 10px;
+    margin-top: 5px;
+    width: 80%;
+    z-index: 1;
+}
+
+.player-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #a50044;
+    color: white;
+    position: absolute;
+    right: 1px;
+    top: 1px;
+    z-index: 2;
+}
+
+.player-card p {
+    text-align: center;    
+}
+
+/*******************************************************************************************/
+
+.list-of-players {
+   height: 100%;
+   width: 100%;
+   padding-top: 50px;
+}
+
+.list-of-players h2 {
+    font-size: 40px;
+    margin: 20px;
+    color: white;
+}
+
+.list-of-players-cards {
+    width: 60%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.substitutions {
+    border-top: 2px solid #004d98;
+    margin-top: 40px;
+    padding-top: 20px;
+}
+
+/*******************************************************************************************/
+/*******************************************************************************************/
+/*******************************************************************************************/
+
+@media screen 
+  and (min-width: 1200px) 
+  and (max-width: 1600px) { 
+
+    .player-card p span {
+        font-size: 0.9rem;    
+    }
+}
+
+/*******************************************************************************************/
+
+@media screen 
+  and (min-width: 1024px) 
+  and (max-width: 1199px) { 
+
+    .list-of-players-cards {
+        width: 80%;
+    }
+    
+    .player-card p span {
+        font-size: 0.8rem;    
+    }
+}
+
+/*******************************************************************************************/
+
+@media screen 
+  and (min-width: 720px) 
+  and (max-width: 1023px) { 
+
+    .list-of-players-cards {
+        width: 100%;
+    }
+
+    .team-header {
+        padding: 30px 50px;
+    }
+
+    .team-header h1 {
+        font-size: 40px;
+    }
+
+    .player-card p span {
+        font-size: 0.7rem;    
+    }
+}
+
+/*******************************************************************************************/
+
+@media screen 
+  and (min-width: 320px) 
+  and (max-width: 719px) { 
+
+    .list-of-players-cards {
+        width: 100%;
+    }
+
+    .team-header {
+        padding: 30px 10px;
+    }
+
+    .selected-team-header h1 {
+        font-size: 30px;
+    }
+
+    .player-card p span {
+        font-size: 0.6rem;    
+    }
+}
+
+/*******************************************************************************************/
+
+@media screen  
+  and (max-width: 550px) { 
+
+    .list-of-players-cards {
+        width: 100%;
+    }
+
+    .team-header {
+        padding: 30px 10px;
+        flex-direction: column;
+    }
+
+    .team-header h1 {
+        font-size: 30px;
+    }
+
+    .list-of-players h2 {
+        font-size: 25px;
+    }
+
+    .right {
+        display: none;
+    }
+
+    .player-card p span {
+        font-size: 0.5rem;    
+    }
+}
+
+/*******************************************************************************************/
+
+@media screen  
+  and (max-width: 319px) { 
+
+    .list-of-players-cards {
+        width: 100%;
+    }
+
+    .team-header {
+        padding: 30px 10px;
+    }
+
+    .team-header h1 {
+        font-size: 30px;
+    }
+
+    .player-card p span {
+        font-size: 0.5rem;    
+    }
+}
+
+/*******************************************************************************************/
+/*******************************************************************************************/
+/*******************************************************************************************/
