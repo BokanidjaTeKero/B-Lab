@@ -1,0 +1,98 @@
+
+body {
+	top: 0;
+	left: 0;
+	box-sizing: border-box;
+	background-color: grey;
+	font-size: 25px;
+	font-family: 'Oswald', sans-serif;
+}
+
+header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	background-color: red;
+	padding: 20px 10px;
+}
+
+input {
+	border: none;
+	border-bottom: 2px solid black;
+	background-color: red;
+	font-size: 1rem;
+}
+
+main {
+	width: 80%;
+	margin: 0 auto;
+	padding: 10px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.movie-card {
+	position: relative;
+	width: 200px;
+	height: 300px;
+	text-align: center;
+	margin: 10px 10px;
+}
+
+.movie-card button {
+	position: absolute;
+	border-radius: 50%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	border: none;
+	display: none;
+	transition: 0.2s;
+	z-index: 1;
+}
+
+.icon-big {
+	top: -12px;
+	right: -12px;
+	width: 24px;
+	height: 24px;
+	background-image: url('./assets/close24px.png');
+}
+
+.icon-small {
+	top: -8px;
+	right: -8px;
+	width: 16px;
+	height: 16px;
+	background-image: url('./assets/close16px.png');
+}
+
+.movie-img {
+	width: 100%;
+	height: 85%;
+	top: 0;
+	left: 0;
+	filter: grayscale(100%);
+	background-size: cover;
+	transition: 0.5s;
+}
+
+.movie-card p {
+	font-size: 1.2rem;
+	transition: 0.5s;
+	padding-top: 5px;
+}
+
+.movie-card:hover .movie-img {
+	filter: grayscale(0%);
+}
+
+.movie-card:hover button {
+	display: inline-block;
+}
+
+.movie-card:hover p {
+	color: white;
+}
