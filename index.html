@@ -1,76 +1,50 @@
 <!DOCTYPE html>
 <html>
-<head>
-	<meta charset="utf-8">
-	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="style.css">
-	<title>Project Link</title>
-</head>
-<body>
-	<header>
-		<div class="header-title">
-			<h1>B-L@b</h1>
-			<h3>If I make it, you will take it</h3>
-		</div>
-	</header>
-	<div id="myModal" class="modal">
-	  <div class="modal-content">
-	    <span class="close">&times;</span>
-	    <p>Greeting. Welcome to the B-Lab website. This site outlines my homeworks. Select an area by pressing the green arrow. You can then see my homeworks, by clicking the "Open" button, witch I hosted on my GitHub profile.Yyou can also inspect the site and look at the same tasks and their solutions. Free to look around.</p>
-	  </div>
-	</div>
-	<main>
-		<div class="main-content">
-			<button id="myBtn" class="link-btn">Counselor</button>
-			<div class="content">
-				<div class="head-content">
-					<p>Git</p>
-					<button id="1" class="btn-btn btn-arrow-down" onclick="myFunction(this)"></button>
-				</div>
-				<div id="con1" class="body-content hidden">
-					<ul>
-						<li>
-							<p>Command Line i GIT</p>
-							<button class="link-btn">
-								<a href="https://github.com/BokanidjaTeKero/B-Lab/tree/Command-Line-i-GIT" target="_blank">Open</a>
-							</button>
-						</li>
-					</ul>
-				</div>
-			</div>
-			<div class="content">
-				<div class="head-content">
-					<p>JavaScript</p>
-					<button id="2"  class="btn-btn btn-arrow-down" onclick="myFunction(this)"></button>
-				</div>
-				<div id="con2" class="body-content hidden">
-					<ul>
-						<li>
-							<p>JS Uvod, Varijable, Operatori</p>
-							<button class="link-btn">
-								<a href="https://github.com/BokanidjaTeKero/B-Lab/tree/JS-Uvod%2C-Varijable%2C-Operatori" target="_blank">Open</a>
-							</button>
-						</li>
-						<li>
-							<p>JS Data tipovi & Kondicionali</p>
-							<button class="link-btn">
-								<a href="https://github.com/BokanidjaTeKero/B-Lab/tree/JS-Data-tipovi-%26-Kondicionali" target="_blank">Open</a>
-							</button>
-						</li>
-						<li>
-							<p>JS Nizovi & Petlje</p>
-							<button class="link-btn">
-								<a href="https://github.com/BokanidjaTeKero/B-Lab/tree/JS-Nizovi-%26-Petlje" target="_blank">Open</a>
-							</button>
-						</li>
-					</ul>
-				</div>
-			</div>
-		</div>
-	</main>
-	
-	<script type="text/javascript" src="app.js"></script>
-	<script type="text/javascript" src="siteScript.js"></script>
+	<head>
+		<title>Food website</title>
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+	</head>
+	<body>
+        <header>
+        	<div class="wrapper">
+        	    <a id="logo" href="#">iFood</a>
+        	    <section class="recipe-count">
+    	    		<span class="recipe-count-number">0</span>
+    	    	    <span class="recipe-count-label">results</span>
+        	    </section>
+        	</div>
+        </header>
+        <main>
+        	<h1>Search recipe</h1>
+        	<section id="food-form">
+        		<input class="keyword-input" type="text" name="q" placeholder="Keyword" />
+        		<select name="health">
+        			<option value="" disabled selected>HEALTH</option>
+                    <option value="alcohol-free">Alcohol free</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="vegetarian">Vegetarian</option>
+                    <option value="peanut-free">Peanuts</option>
+        		</select>
+                <select name="diet">
+                    <option value="" disabled selected>DIET</option>
+                    <option value="balanced">Balanced</option>
+                    <option value="high-protein">High-Protein</option>
+                    <option value="low-carb">Low-Carb</option>
+                    <option value="low-fat">Low-Fat</option>
+                </select>
+                <input class="min-calories-input" type="number" name="q" placeholder="Min Calories" />
+                <input class="max-calories-input" type="number" name="q" placeholder="Max Calories" />
+        		<button class="search-button" disabled>Search</button>
+        	</section>
+        	<div class="loader"></div>
+        	<section id="recipes"></section>
+        </main>
+        <section class="pagination">
+            <span class="goLeft"></span>
+            <section class="paginationElements"></section>
+            <span class="goRight"></span>
+        </section>
 
-</body>
+        <script src="js/main.js" type="module"></script>
+	</body>
 </html>
